@@ -15,8 +15,65 @@
   --primary-text-color: #464647;
 }
 
+.font10 {
+  font-size: 10pt;
+}
+
+.font11 {
+  font-size: 11pt;
+}
+
+.font12 {
+  font-size: 12pt;
+}
+
+.font13 {
+  font-size: 13pt;
+}
+
+.font14 {
+  font-size: 14pt;
+}
+
+.font15 {
+  font-size: 15pt;
+}
+
+.font16 {
+  font-size: 16pt;
+}
+
+.font10 {
+  font-size: 10pt;
+}
+
+.font17 {
+  font-size: 17pt;
+}
+
+.font18 {
+  font-size: 18pt;
+}
+.font19 {
+  font-size: 19pt;
+}
+
+.font20 {
+  font-size: 20pt;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 22px;
+}
+
+.middle-line {
+  height: 50%;
+
+  height: 100px;
+  width: 10px;
+  background-color: #000;
+  border-radius: 5px;
 }
 
 /* utility classes started */
@@ -45,103 +102,120 @@ body {
   padding: 20px;
 }
 
+.main-button {
+  background-color: var(--primary-color);
+  padding: 10px !important;
+  display: inline !important;
+  margin: 10px 0px !important;
+  border-radius: 4px;
+}
+
+.main-button:hover {
+  color: #eee;
+  cursor: pointer;
+}
+
 /* utility classes endede */
 
-/* nav bar styling starts  */
-.navbar {
+.hero-section {
+  /* background-color: blue; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.hero-section img {
+  width: 100vw;
+}
+
+.hero-container .hero-inner-container {
   display: flex;
-  padding: 10px;
-  align-items: center;
   justify-content: space-between;
-  background-color: #ccc;
-}
-
-.navbar .logo-container {
-  height: 80px;
-  display: flex;
-  /* background-color: #f00; */
   align-items: center;
+  /* background-color: #ff8f45; */
 }
 
-.navbar .logo-container img {
-  height: 60px;
-  width: auto;
+.hero-container .hero-inner-container .hero-img-container img {
+  width: 35vw;
 }
 
-.navbar .nav-links-container span {
-  margin: 0px 5px;
-  color: #f00;
+.hero-container .hero-inner-container .links-heading div {
+  padding: 10px 0px;
 }
 
-.navbar .nav-links-container span:hover {
-  cursor: pointer;
-  color: #fff;
+.sub-hero-section {
+  margin-top: -30px;
+  /* z-index: 10; */
+  position: relative;
 }
 
-/* nav bar styling ends  */
-
-/* about section styling starts  */
-
-.about-container {
+.sub-hero-section-container {
   display: flex;
-  margin: 20px 0px;
-}
-
-.about-container .about-image-container img {
-  width: 40vw;
-}
-
-.about-container .about-image-container {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
+  border: 3px solid orange;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #fff;
 }
 
-.about-container .about-desc-container {
+.sub-hero-section-container .individual-sub-hero {
   display: flex;
   flex-direction: column;
-  width: 45vw;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.sub-hero-section-container .individual-sub-hero div {
+  padding: 5px 0px;
+}
+
+.sub-hero-section-container .individual-sub-hero div img {
+  height: 60px;
+}
+
+.reviews-container {
+  padding: 50px 0px;
+}
+
+.reviews-container .individual-rating-item-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.reviews-container .individual-rating-item-container .individual-rating-item {
+  background-color: yellowgreen;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.reviews-container .review-head .review-count {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.about-container .about-desc-container .about-title {
-  margin-bottom: 10px;
-}
-
-/* about section styling ends  */
-
-/* servicesx section styling starts  */
-
-.services-container .title-desc-conatiner .title-container span {
-  /* margin-top: 50px; */
-  border-bottom: solid 1px #f00;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.services-container .desc-container {
-  margin-top: 20px;
-}
-
-.service-section {
-  background-color: #ddd;
-  padding: 30px 0px;
-}
-
-.service-cards-container {
+.reviews-container .review-head .review-count .review-count-inner {
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
 }
 
-.service-cards-container .card {
-  width: 22vw;
-  max-width: 22vw;
-}
-
-.service-cards-container .card .service-logo-container img {
-  height: 40px;
-}
-
-.service-cards-container .card .title {
-  margin: 20px 0px;
+.reviews-container
+  .review-head
+  .review-count
+  .review-count-inner
+  .review-count-internal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellowgreen;
 }
