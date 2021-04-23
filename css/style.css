@@ -179,3 +179,43 @@ body {
 .sub-hero-section-container .individual-sub-hero div img {
   height: 60px;
 }
+
+.reviews-container {
+  padding: 50px 0px;
+}
+
+.reviews-container .individual-rating-item-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.reviews-container .individual-rating-item-container .individual-rating-item {
+  background-color: yellowgreen;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.reviews-container .review-head .review-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-container .review-head .review-count .review-count-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+
+.reviews-container
+  .review-head
+  .review-count
+  .review-count-inner
+  .review-count-internal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellowgreen;
+}
