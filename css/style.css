@@ -61,6 +61,13 @@
 .font20 {
   font-size: 20pt;
 }
+.font25
+{
+  font-size: 25px;
+  
+  color:grey;
+
+}
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -180,42 +187,186 @@ body {
   height: 60px;
 }
 
-.reviews-container {
-  padding: 50px 0px;
+
+
+/* reviews section starts  */
+.card1
+  {
+    border-radius: 10px;
+    box-shadow: -1px 0px 0px -1px;
+    /* padding: 20px; */
+    background-color: ghostwhite;
+    width: 30vw;
+    height: 40vh;
+    margin: 20px;
+    
+  }
+
+.feedback{
+  padding-top: 50px;
 }
 
-.reviews-container .individual-rating-item-container {
+
+.rating-container
+{
+  color: #737373;
+  font-size: 60px;
+  line-height: 50px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.review-container
+{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding:20px 0;
 }
-
-.reviews-container .individual-rating-item-container .individual-rating-item {
-  background-color: yellowgreen;
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-}
-
-.reviews-container .review-head .review-count {
+.review-container
+{
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding-right: 2pc;
+}
+.review-heading
+{
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #232e5b;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+}
+.middle {
+  padding-top: 4px;
+  float: left;
+  width: 94%;
+}
+.bar-container {
+  width: 5500%;
+  
+  text-align: center;
+  color: white;
+}
+.bar-5 {
+  width: 60%;
+  height: 20px;
+ background-color: #78c8a1;
+}
+.bar-4 {
+  width: 15%;
+  height: 20px;
+  background-color: #aed787;
+}
+.bar-3 {
+  width: 7%;
+  height: 20px;
+  background-color: #ffd834;
+}
+.bar-2 {
+  width: 2%;
+  height: 20px;
+  background-color: #ffb234;
+}
+.bar-1 {
+  width: 10%;
+  height: 20px;
+  background-color: #ff8b5a;
+}
+.main-profile-container 
+{
+  display: flex;
+  
   justify-content: center;
 }
+.profile-container 
+{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-bottom: 35px;
+  background-color: lavender;
+  padding: 10px;
+  position: relative;
+}
+.g16
+{
+display: flex;
+ justify-content: center;
+ margin-right: 70px;
+}
+.profile-inner-container
+{
+  padding-top: 80px;
+  padding-left: 20px;
+}
+.profile-pic
+{
+  position: absolute;
+  top: -24px;
+  left: 10px;
+}
+.profile-name
+{
+  padding-bottom: 20px;
+}
+.g16 .review-container .bar-interal-container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.won-container 
+{
+  left: -45px;
+    top: -3px;
+  position: absolute;
+  box-shadow: 0px 1px 1px 0px;
+  border-radius: 6px;
+  background-color: mediumseagreen;
 
-.reviews-container .review-head .review-count .review-count-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 20px;
 }
 
-.reviews-container
-  .review-head
-  .review-count
-  .review-count-inner
-  .review-count-internal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: yellowgreen;
+.star-rating
+{
+  padding-top: 20px;
+
 }
+.b1{
+  display: flex;
+  position: relative;
+  top: -2px;
+
+
+}
+.star4 img
+{
+width: 8vw;
+}
+.person img{
+  width: 2vw;
+  height: 3vh;
+}
+.profile-container .winner-feedback-container
+{
+  padding-top: 40px;
+}
+
+.winner-feedback-container span
+{
+  color: #232e5b;
+  font-size: 17px;
+  line-height: 24px;
+  min-height: 100px;
+  text-align: left;
+  padding-right: 10px;
+
+}
+
+.profile-pic img{
+  height: 15vh;
+  width: 8vw;
+  border-radius: 40px;
+  
+}
+/* reviews section ends  */
