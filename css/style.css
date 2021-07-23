@@ -220,7 +220,7 @@ body {
   align-items: center;
 }
 
-.navbar-container .links-conatiner .links-inner span {
+.navbar-container .links-conatiner .links-inner a {
   padding: 0px 5px;
 }
 
@@ -275,6 +275,8 @@ body {
   border-radius: 6px;
   padding: 10px;
   background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
 }
 
 .sub-hero-section-container .individual-sub-hero {
@@ -286,6 +288,7 @@ body {
 
 .sub-hero-section-container .individual-sub-hero div {
   padding: 5px 0px;
+  text-align: center;
 }
 
 .sub-hero-section-container .individual-sub-hero div img {
@@ -542,7 +545,7 @@ body {
 
 .paying-earning-container .paying-earning-container-inner {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   color: #5f6774;
   font-size: 15px;
   line-height: 24px;
