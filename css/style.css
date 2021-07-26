@@ -91,6 +91,10 @@ body {
   text-align: justify;
 }
 
+.center-text {
+  text-align: center !important;
+}
+
 .content-wrapper {
   max-width: 90vw;
   margin: auto;
@@ -240,9 +244,16 @@ body {
   width: 90%;
 }
 
+.links-heading {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+}
+
 .hero-section img {
   height: 90vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .hero-container .hero-inner-container {
@@ -253,8 +264,8 @@ body {
 }
 
 .hero-container .hero-inner-container .hero-img-container img {
-  width: 20vw;
-  height: 66vh;
+  /* width: 20vw; */
+  height: 60vh;
 }
 
 .hero-container .hero-inner-container .links-heading div {
@@ -555,8 +566,15 @@ body {
 }
 
 .instruction-image img {
-  margin-top: -27px;
-  margin-left: 27px;
+  /* margin-top: -27px; */
+  /* margin-left: 27px; */
+  /* width: 20vw; */
+  height: 60vh;
+  margin-top: 10px;
+}
+
+.hero-section .hero-image {
+  width: 100vw;
 }
 
 .paying-earning-container img {
@@ -658,4 +676,105 @@ body {
 
 .other-page-body span {
   text-align: justify;
+}
+
+@media screen and (max-width: 992px) {
+  .links-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-container {
+    top: 38%;
+  }
+
+  .hero-section {
+    height: 70vh;
+  }
+  .hero-container .hero-inner-container {
+    flex-direction: column;
+  }
+  .hero-container .hero-inner-container .hero-img-container img {
+    height: 30vh;
+    display: none;
+  }
+
+  .hero-section img {
+    height: 60vh;
+    /* width: 100vw; */
+  }
+
+  .sub-hero-section-container {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 0fr 1fr 0fr 1fr;
+  }
+
+  .middle-line {
+    height: 0px;
+    background-color: #bbb;
+    border-radius: 5px;
+  }
+
+  .milestone-parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-to-play-parent {
+    margin-top: 2em;
+    /* flex: 0.9; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .how-to-play-parent .video-player-container iframe {
+    width: 100vw;
+  }
+
+  .reviews-container .review-head .review-count {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews-container .review-head .review-count .review-count-inner {
+    align-items: flex-start;
+  }
+
+  .reviews-container .individual-rating-item-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+
+  .reviews-container .individual-rating-item-container .individual-rating-item {
+    grid-template-columns: 1fr;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .download-app-container {
+    flex-direction: column;
+  }
+
+  .download-app-container .download-description {
+    margin-top: 60px;
+    max-width: 100%;
+  }
+
+  .download-app-container .download-app-image-container {
+    margin-top: 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
